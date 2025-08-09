@@ -1,0 +1,615 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		599720052E4769AC0047A8E4 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 599720042E4769AC0047A8E4 /* FirebaseDatabase */; };
+		599720072E4769AC0047A8E4 /* FirebaseDatabaseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 599720062E4769AC0047A8E4 /* FirebaseDatabaseSwift */; };
+		599720092E4769AC0047A8E4 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 599720082E4769AC0047A8E4 /* FirebaseFirestore */; };
+		5997200B2E4769AC0047A8E4 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 5997200A2E4769AC0047A8E4 /* FirebaseFirestoreSwift */; };
+		5997200D2E4769AC0047A8E4 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 5997200C2E4769AC0047A8E4 /* FirebaseStorage */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		59971FE72E4768ED0047A8E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 59971FD12E4768EC0047A8E4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 59971FD82E4768EC0047A8E4;
+			remoteInfo = TicketBooking;
+		};
+		59971FF12E4768ED0047A8E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 59971FD12E4768EC0047A8E4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 59971FD82E4768EC0047A8E4;
+			remoteInfo = TicketBooking;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		59971FD92E4768EC0047A8E4 /* TicketBooking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TicketBooking.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		59971FE62E4768ED0047A8E4 /* TicketBookingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TicketBookingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		59971FF02E4768ED0047A8E4 /* TicketBookingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TicketBookingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		59971FDB2E4768EC0047A8E4 /* TicketBooking */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = TicketBooking;
+			sourceTree = "<group>";
+		};
+		59971FE92E4768ED0047A8E4 /* TicketBookingTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = TicketBookingTests;
+			sourceTree = "<group>";
+		};
+		59971FF32E4768ED0047A8E4 /* TicketBookingUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = TicketBookingUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		59971FD62E4768EC0047A8E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				599720072E4769AC0047A8E4 /* FirebaseDatabaseSwift in Frameworks */,
+				599720052E4769AC0047A8E4 /* FirebaseDatabase in Frameworks */,
+				599720092E4769AC0047A8E4 /* FirebaseFirestore in Frameworks */,
+				5997200D2E4769AC0047A8E4 /* FirebaseStorage in Frameworks */,
+				5997200B2E4769AC0047A8E4 /* FirebaseFirestoreSwift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59971FE32E4768ED0047A8E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59971FED2E4768ED0047A8E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		59971FD02E4768EC0047A8E4 = {
+			isa = PBXGroup;
+			children = (
+				59971FDB2E4768EC0047A8E4 /* TicketBooking */,
+				59971FE92E4768ED0047A8E4 /* TicketBookingTests */,
+				59971FF32E4768ED0047A8E4 /* TicketBookingUITests */,
+				59971FDA2E4768EC0047A8E4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		59971FDA2E4768EC0047A8E4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				59971FD92E4768EC0047A8E4 /* TicketBooking.app */,
+				59971FE62E4768ED0047A8E4 /* TicketBookingTests.xctest */,
+				59971FF02E4768ED0047A8E4 /* TicketBookingUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		59971FD82E4768EC0047A8E4 /* TicketBooking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 59971FFA2E4768ED0047A8E4 /* Build configuration list for PBXNativeTarget "TicketBooking" */;
+			buildPhases = (
+				59971FD52E4768EC0047A8E4 /* Sources */,
+				59971FD62E4768EC0047A8E4 /* Frameworks */,
+				59971FD72E4768EC0047A8E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				59971FDB2E4768EC0047A8E4 /* TicketBooking */,
+			);
+			name = TicketBooking;
+			packageProductDependencies = (
+				599720042E4769AC0047A8E4 /* FirebaseDatabase */,
+				599720062E4769AC0047A8E4 /* FirebaseDatabaseSwift */,
+				599720082E4769AC0047A8E4 /* FirebaseFirestore */,
+				5997200A2E4769AC0047A8E4 /* FirebaseFirestoreSwift */,
+				5997200C2E4769AC0047A8E4 /* FirebaseStorage */,
+			);
+			productName = TicketBooking;
+			productReference = 59971FD92E4768EC0047A8E4 /* TicketBooking.app */;
+			productType = "com.apple.product-type.application";
+		};
+		59971FE52E4768ED0047A8E4 /* TicketBookingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 59971FFD2E4768ED0047A8E4 /* Build configuration list for PBXNativeTarget "TicketBookingTests" */;
+			buildPhases = (
+				59971FE22E4768ED0047A8E4 /* Sources */,
+				59971FE32E4768ED0047A8E4 /* Frameworks */,
+				59971FE42E4768ED0047A8E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				59971FE82E4768ED0047A8E4 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				59971FE92E4768ED0047A8E4 /* TicketBookingTests */,
+			);
+			name = TicketBookingTests;
+			packageProductDependencies = (
+			);
+			productName = TicketBookingTests;
+			productReference = 59971FE62E4768ED0047A8E4 /* TicketBookingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		59971FEF2E4768ED0047A8E4 /* TicketBookingUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 599720002E4768ED0047A8E4 /* Build configuration list for PBXNativeTarget "TicketBookingUITests" */;
+			buildPhases = (
+				59971FEC2E4768ED0047A8E4 /* Sources */,
+				59971FED2E4768ED0047A8E4 /* Frameworks */,
+				59971FEE2E4768ED0047A8E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				59971FF22E4768ED0047A8E4 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				59971FF32E4768ED0047A8E4 /* TicketBookingUITests */,
+			);
+			name = TicketBookingUITests;
+			packageProductDependencies = (
+			);
+			productName = TicketBookingUITests;
+			productReference = 59971FF02E4768ED0047A8E4 /* TicketBookingUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		59971FD12E4768EC0047A8E4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1640;
+				LastUpgradeCheck = 1640;
+				TargetAttributes = {
+					59971FD82E4768EC0047A8E4 = {
+						CreatedOnToolsVersion = 16.4;
+					};
+					59971FE52E4768ED0047A8E4 = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = 59971FD82E4768EC0047A8E4;
+					};
+					59971FEF2E4768ED0047A8E4 = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = 59971FD82E4768EC0047A8E4;
+					};
+				};
+			};
+			buildConfigurationList = 59971FD42E4768EC0047A8E4 /* Build configuration list for PBXProject "TicketBooking" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 59971FD02E4768EC0047A8E4;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				599720032E4769AC0047A8E4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 59971FDA2E4768EC0047A8E4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				59971FD82E4768EC0047A8E4 /* TicketBooking */,
+				59971FE52E4768ED0047A8E4 /* TicketBookingTests */,
+				59971FEF2E4768ED0047A8E4 /* TicketBookingUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		59971FD72E4768EC0047A8E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59971FE42E4768ED0047A8E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59971FEE2E4768ED0047A8E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		59971FD52E4768EC0047A8E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59971FE22E4768ED0047A8E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59971FEC2E4768ED0047A8E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		59971FE82E4768ED0047A8E4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 59971FD82E4768EC0047A8E4 /* TicketBooking */;
+			targetProxy = 59971FE72E4768ED0047A8E4 /* PBXContainerItemProxy */;
+		};
+		59971FF22E4768ED0047A8E4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 59971FD82E4768EC0047A8E4 /* TicketBooking */;
+			targetProxy = 59971FF12E4768ED0047A8E4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		59971FF82E4768ED0047A8E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		59971FF92E4768ED0047A8E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		59971FFB2E4768ED0047A8E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.royan.myiosapps.TicketBooking;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		59971FFC2E4768ED0047A8E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.royan.myiosapps.TicketBooking;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		59971FFE2E4768ED0047A8E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.royan.myiosapps.TicketBookingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TicketBooking.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TicketBooking";
+			};
+			name = Debug;
+		};
+		59971FFF2E4768ED0047A8E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.royan.myiosapps.TicketBookingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TicketBooking.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TicketBooking";
+			};
+			name = Release;
+		};
+		599720012E4768ED0047A8E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.royan.myiosapps.TicketBookingUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TicketBooking;
+			};
+			name = Debug;
+		};
+		599720022E4768ED0047A8E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.royan.myiosapps.TicketBookingUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TicketBooking;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		59971FD42E4768EC0047A8E4 /* Build configuration list for PBXProject "TicketBooking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59971FF82E4768ED0047A8E4 /* Debug */,
+				59971FF92E4768ED0047A8E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		59971FFA2E4768ED0047A8E4 /* Build configuration list for PBXNativeTarget "TicketBooking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59971FFB2E4768ED0047A8E4 /* Debug */,
+				59971FFC2E4768ED0047A8E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		59971FFD2E4768ED0047A8E4 /* Build configuration list for PBXNativeTarget "TicketBookingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59971FFE2E4768ED0047A8E4 /* Debug */,
+				59971FFF2E4768ED0047A8E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		599720002E4768ED0047A8E4 /* Build configuration list for PBXNativeTarget "TicketBookingUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				599720012E4768ED0047A8E4 /* Debug */,
+				599720022E4768ED0047A8E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		599720032E4769AC0047A8E4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.18.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		599720042E4769AC0047A8E4 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 599720032E4769AC0047A8E4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		599720062E4769AC0047A8E4 /* FirebaseDatabaseSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 599720032E4769AC0047A8E4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabaseSwift;
+		};
+		599720082E4769AC0047A8E4 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 599720032E4769AC0047A8E4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		5997200A2E4769AC0047A8E4 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 599720032E4769AC0047A8E4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+		5997200C2E4769AC0047A8E4 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 599720032E4769AC0047A8E4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 59971FD12E4768EC0047A8E4 /* Project object */;
+}
