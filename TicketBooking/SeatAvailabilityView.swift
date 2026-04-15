@@ -18,40 +18,143 @@ struct SeatAvailabilityView: View {
     @State private var errorMessage = ""
     
     var body: some View {
-        VStack(spacing: 20) {
-            Text("Check Seat Availability")
-                .font(.title2)
-                .bold()
+        VStack(spacing: 24) {
             
-            TextField("Train Number", text: $trainNumber)
-                .textFieldStyle(RoundedBorderTextFieldStyle())
-                .padding(.horizontal)
-                .autocapitalization(.allCharacters) // Use this instead of .textInputAutocapitalization(.allCharacters) for older iOS
-            
-            DatePicker("Travel Date", selection: $travelDate, displayedComponents: .date)
-                .padding(.horizontal)
-            
-            Button("Check Availability") {
-                checkSeats()
+            // 🧾 HEADER
+            VStack(spacing: 6) {
+                HStack(spacing: 8) {
+                    Image(systemName: "chair.fill") // 🪑 seat icon
+                                .font(.title3)
+                                .foregroundColor(.blue)
+                            
+                    Text("Check Seat Availability")
+                        .font(.title2)
+                        .bold()
+                }
+                Text("Find available seats for your journey")
+                    .font(.caption)
+                    .foregroundColor(.gray)
             }
-            .buttonStyle(.borderedProminent)
-            .disabled(trainNumber.isEmpty)
             
-            if isLoading {
-                ProgressView()
-            } else if !errorMessage.isEmpty {
-                Text(errorMessage)
-                    .foregroundColor(.red)
-            } else {
-                Text("Booked Seats: \(bookedSeats)")
-                Text("Available Seats: \(max(totalSeats - bookedSeats, 0))")
-                    .bold()
-                    .foregroundColor(.green)
+            // 📦 INPUT CARD
+            VStack(spacing: 16) {
+                
+                // 🚆 Train Number
+                VStack(alignment: .leading, spacing: 6) {
+                    Text("Train Number")
+                        .font(.caption)
+                        .foregroundColor(.gray)
+                    
+                    TextField("Enter train number", text: $trainNumber)
+                        .padding()
+                        .background(Color(.systemGray6))
+                        .cornerRadius(10)
+                        .autocapitalization(.allCharacters)
+                }
+                
+                // 📅 Date Picker
+                VStack(alignment: .leading, spacing: 6) {
+                    Text("Travel Date")
+                        .font(.caption)
+                        .foregroundColor(.gray)
+                    
+                    DatePicker("", selection: $travelDate, displayedComponents: .date)
+                        .labelsHidden()
+                        .padding()
+                        .background(Color(.systemGray6))
+                        .cornerRadius(10)
+                }
+                
+                // 🔍 BUTTON
+                Button(action: {
+                    checkSeats()
+                }) {
+                    HStack {
+                        Image(systemName: "chair.fill")
+                        
+                        Text("Check Availability")
+                            .bold()
+                    }
+                    .frame(maxWidth: .infinity)
+                    .padding()
+                    .background(
+                        trainNumber.isEmpty
+                        ? AnyShapeStyle(Color.gray.opacity(0.5))
+                        : AnyShapeStyle(
+                            LinearGradient(
+                                colors: [.blue, .purple],
+                                startPoint: .leading,
+                                endPoint: .trailing
+                            )
+                        )
+                    )
+                    .foregroundColor(.white)
+                    .cornerRadius(12)
+                }
+                .disabled(trainNumber.isEmpty)
+                
             }
+            .padding()
+            .background(Color.white)
+            .cornerRadius(16)
+            .shadow(color: .black.opacity(0.05), radius: 10)
+            
+            // 📊 RESULT CARD
+            VStack(spacing: 16) {
+                
+                if isLoading {
+                    ProgressView("Checking seats...")
+                }
+                
+                else if !errorMessage.isEmpty {
+                    Text(errorMessage)
+                        .foregroundColor(.red)
+                        .font(.subheadline)
+                }
+                
+                else {
+                    HStack {
+                        VStack(alignment: .leading, spacing: 6) {
+                            HStack {
+                                Image(systemName: "person.fill")
+                                Text("Booked")
+                                    .font(.caption)
+                                    .foregroundColor(.gray)
+                            }
+                            
+                            Text("\(bookedSeats)")
+                                .font(.title2)
+                                .bold()
+                        }
+                        
+                        Spacer()
+                        
+                        VStack(alignment: .trailing, spacing: 6) {
+                            HStack {
+                                Image(systemName: "chair.fill")
+                                Text("Available")
+                                    .font(.caption)
+                                    .foregroundColor(.gray)
+                            }
+                            
+                            Text("\(max(totalSeats - bookedSeats, 0))")
+                                .font(.title2)
+                                .bold()
+                                .foregroundColor(.green)
+                        }
+                    }
+                }
+            }
+            .padding()
+            .frame(maxWidth: .infinity)
+            .background(Color.white)
+            .cornerRadius(16)
+            .shadow(color: .black.opacity(0.05), radius: 10)
             
             Spacer()
         }
         .padding()
+        .background(Color(.systemGroupedBackground))
     }
     
     private func checkSeats() {
